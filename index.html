@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Screen Saver</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="menu">
+  <h1>Screen Saver</h1>
+  <p>Choose a theme</p>
+  <div id="theme-list">
+    <button class="theme-btn" data-theme="matrix">Matrix</button>
+    <button class="theme-btn" data-theme="clock">Clock</button>
+    <button class="theme-btn" data-theme="time-elapsing">Time Elapsing</button>
+    <button class="theme-btn" data-theme="flip-clock">Flip Clock</button>
+  </div>
+</div>
+
+<div id="screen-saver" style="display:none">
+  <canvas id="canvas"></canvas>
+</div>
+
+<script src="themes/matrix.js"></script>
+<script src="themes/clock.js"></script>
+<script src="themes/time-elapsing.js"></script>
+<script src="themes/flip-clock.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
